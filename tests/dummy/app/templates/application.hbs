@@ -1,3 +1,6 @@
-<h2 id="title">Welcome to Ember</h2>
+{{nokia-string string=string slices=slices debug=debug animated=animated}}
 
-{{outlet}}
+<label>{{input value=string}} string</label><br/>
+<label>{{input value=slices type='number'}} slices</label><br/>
+<label>{{input checked=animated type='checkbox'}} animated</label><br/>
+<label>{{input checked=debug type='checkbox'}} debug</label><br/>
