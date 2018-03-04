@@ -4,6 +4,8 @@ import { computed } from '@ember/object'
 import $ from 'jquery';
 
 export default Component.extend({
+  classNames: ['meta-strings'],
+
   strings: computed(function () {
     return $(document).find('meta[name=nokia-string]').map(function() {
       return $(this).attr('content')
