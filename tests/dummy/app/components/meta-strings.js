@@ -14,5 +14,11 @@ export default Component.extend({
 
   slices: computed(function () {
     return parseInt($(document).find('meta[name=slices]').attr('content'));
+  }),
+
+  animated: computed(function () {
+    const attr = $(document).find('meta[name=animated]').attr('content');
+
+    return attr === 'true'
   })
 });
